@@ -1,6 +1,6 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let result = "";
-  for(let name of reportWithIterator) {
+  let result = '';
+  for (const name of reportWithIterator) {
     if (!result) {
       result = name;
     } else {
@@ -8,4 +8,4 @@ export default function iterateThroughObject(reportWithIterator) {
     }
   }
   return result;
- }
+}
