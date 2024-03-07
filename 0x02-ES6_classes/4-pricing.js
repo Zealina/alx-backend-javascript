@@ -36,7 +36,7 @@ export default class Pricing {
     if (typeof amount !== 'number') {
       throw new Error('Amount must be a number');
     }
-    if (typeof convetsionRate !== 'number') {
+    if (typeof conversionRate !== 'number') {
       throw new Error('Conversion Rate must be a number');
     }
     return (amount * conversionRate);
