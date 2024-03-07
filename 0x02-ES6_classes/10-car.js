@@ -13,9 +13,6 @@ export default class Car {
 
   cloneCar() {
     const clone = this[cloneSymbol]();
-    Object.getOwnPropertyNames(this).forEach((prop) => {
-      clone[prop] = this[prop];
-    });
     return clone;
   }
 }
