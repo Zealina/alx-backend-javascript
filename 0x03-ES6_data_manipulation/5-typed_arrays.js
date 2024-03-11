@@ -1,9 +1,8 @@
 export default function createInt8TypedArray(length, position, value) {
   const ArrayBuffer = new Int8Array(length);
-  try {
+  if (position >= 0 && position < length) {
     ArrayBuffer[position] = value;
     return new DataView(ArrayBuffer.buffer);
-  } catch (_) {
-    throw new Error('Position outside range');
   }
+  throw new Error('Position outside range');
 }
