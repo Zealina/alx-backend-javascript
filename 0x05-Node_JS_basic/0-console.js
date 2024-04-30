@@ -1,6 +1,9 @@
-const process = require('node:process');
+/**
+ * Displays a message on the STDOUT.
+ * @param {String} msg The message to display.
+ */
+const displayMessage = (msg) => {
+  console.log(msg);
+};
 
-function displayMessage(string) {
-  process.stdout.write(`${string}\n`);
-}
 module.exports = displayMessage;
